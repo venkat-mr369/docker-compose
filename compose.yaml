@@ -10,12 +10,12 @@ services:
     ports:
      - "8080:5000"
     networks:
-      - javahome-app
+      - mango-network
   redis:
     container_name: redis
     image: "redis"
     networks:
-      - javahome-app
+      - mango-network
 networks:
   javahome-app:
     driver: bridge
